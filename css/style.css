@@ -30,40 +30,34 @@ img{
   background: white;
   padding: 5px;
   line-height: 25px;
-  height: 70vh;
-  overflow: auto;
+  overflow-y: scroll ;
 }
 .mob_wrapper{
-  height: 90vh;
+  max-height: 90vh;
   width: 400px;
   border: 5px solid black;
-  border-bottom: 50px solid black;
+  display: flex;
+  flex-direction: column;
 }
 .header{
   color: white;
   display: flex;
   padding: 5px;
   align-items: center;
-  justify-content: center;
-}
-.back{
-  margin-right: auto;
-}
-.settings{
-  margin-left: auto;
+  justify-content: space-between;
 }
 .back, .settings{
-  height: 25px;
-  padding: 5px;
+  padding: 10px;
   background: rgba(0, 0, 0, 0.1);
-  flex-basis: 70px;
 }
 .footer{
   display: flex;
+  flex: 1 1 auto;
 }
 .items{
-  flex: 1;
   border: 0.2px solid #a39696;
+  padding-bottom: 30px;
+  flex: 1;
   display: flex;
   flex-direction: column;
   align-items: center;
